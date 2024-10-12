@@ -20,3 +20,13 @@ Pour chaque itération, assurez-vous de vous arrêter après avoir affiché les 
 */
 
 
+const number = parseInt(prompt("Table de multiplication"))
+let i = 1;
+
+if (isNaN(number)) {console.log("Ce n'est pas un chiffre")}
+else {
+    while (i <= 10) {
+        console.log(`${number} * ${i} = ` + (number*i));
+        i++;
+    }
+}
