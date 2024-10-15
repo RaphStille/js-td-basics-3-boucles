@@ -15,6 +15,17 @@ N.B. Faites-le de deux manières différentes :
 // Commencez par demander à l'utilisateur la table de multiplication souhaitée et le nombre de valeurs à afficher
 // Ensuite, utilisez une boucle FOR pour calculer et afficher les x premières valeurs de la table de multiplication
 
+let choix = parseInt(prompt("Quelle table de multiplication souhaitez-vous afficher ?"));
+let choix2 = parseInt(prompt("Combien de valeurs souhaitez-vous afficher pour cette table ?"));
+
+if (isNaN(choix) || isNaN(choix2)) {
+    console.log("Veuillez séléctionner un chiffre")
+} else {
+    for (let i = 0; i <= choix2; i++) {
+        console.log(`${choix2}*${choix} = ` + (choix2*choix));
+    }
+}
+
 // avec WHILE
 // Répétez le même processus avec une boucle WHILE, en demandant à nouveau la table de multiplication et le nombre de valeurs
 
